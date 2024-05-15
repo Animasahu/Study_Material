@@ -1,0 +1,39 @@
+Hoisting in JS --
+
+1. Hoisting is a process where we can access variables/functions even before initialized it.
+2. console.log(a);
+   test();
+   var z = 7;
+   function get (){
+     console.log(1);
+   }
+
+   o/p -> undefined
+          1
+
+3. UNDEFINED means variable has been declared but value is Not assigned . 
+   But NOT DEFINED means variables is not DECLARED.
+
+4. What about the let and const declaration ? Are they hoisted?
+   -> Yes let and const are also hoisted but it is trapped in a temporal dead zone(TDZ).
+
+5. Temporal Dead Zone is the time since when this let veriable was hoisted and till its initialized some value the time between that is known as the TDZ.
+6. Temporal Dead Zone exist until variable is declared and assigned a value.
+
+7. console.log(a); // get reference error : cannot access "a" before initialization 
+    
+   let a = 10;
+
+   var b = 100;
+
+   whenever we try to access a variable inside a temporal dead zone its gives us  a "Reference Error".
+
+8. var // no TDZ , can re-declare and re-initialize , stored in Global execution context
+   
+   let // us TDZ , can't re-declare , can re-initialize , stored in seperate memory
+
+   const // use TDZ , can't re-declare , can't re-initialize , stored in seperate memory
+
+9. There are three type of error : (a) reference error - while trying to access variable which is not there in global memory
+                                   (b) TypeError - trying to re-initialize const variable 
+                                   (c) Syntax error - when proper is not used

@@ -1,0 +1,21 @@
+Shortest JS program -- 
+
+1. Shortest Program in js : "Empty file".
+2. JavaScript Engine creates a global object whenever we run a js code . In case of browers,  this global object known as "window" .
+3. 'window' is actually global object which is created along with the global execution context.
+4. Whenever any js program run a global object is created , a global execution context is created and along with the execution context 'this' variable is created. 
+   Even through our file is empty the also its created.
+5. At the global lavel 'this' point to the global object.
+6. Any thing that is not inside any funtion is the "global space".
+7. Whenever we create any variable or functions in the "global space" , they got attached to the global object. 
+   So access the variable/function defined in the global space, we can use any of the below,
+   
+   var a = 10; -> global space
+   function b(){ -> global space
+    var x = 10;  -> not in global space
+   }
+   console.log(window.a);
+   console.log(a);
+   console.log(x); -> error undefined
+   console.log(this.a); // at the global lavel , where 'this' point to the window object.
+

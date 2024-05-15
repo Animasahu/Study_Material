@@ -1,0 +1,9 @@
+ Execution context in js --
+
+1. Everything in JavaScript happens inside Execution Context.
+2. Execution Context has two components, a) Memory or Variable Environment, b) Code or Thread of Execution
+3. In Memory Component all the variables and functions are stored as key value pair
+4. In Code Component whole JavaScript code is executed Synchronously
+
+--> JavaScript is a synchronous Single-threatedn language that means javascript can execute single line at a time and in a specific order . 
+That menas ,it can only go to the next line oknce current line has been finished executing .

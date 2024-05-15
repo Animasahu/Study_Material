@@ -1,0 +1,14 @@
+How code is executed in JavaScript --
+
+1. When the JavaScript engine scans a script file , it makes an environment called the Execution Context.
+2. The execution context execute code in two phases - (1) Memory creation phase (2) Code excution phase
+3. In memory creation phase, JavaScript will allocate memory to all the variables and functions inside the global space.
+4. Variables are stored as undefined and for functions the whole function definition is stored inside the memory space.
+5. In code execution phase all the variable will be allocated the value assigned to them in the code.
+6. During Code Execution if a function is invoked a new execution context is created for that function.
+7. Once code is excetued the execution context will be deleted.
+8. Also , JavaScript has a call stack which handles all the excution context .Whenever a new execution context is created it is pushed to the call stack.
+9. call stack ,anages the order of execution of all execution contexts.
+
+
+****https://www.freecodecamp.org/news/how-javascript-works-behind-the-scene-javascript-execution-context/***
